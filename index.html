@@ -36,12 +36,12 @@
 
         <section id="about-section">
             <div id="about-section-introduction">
-                <h1>Hi, I am Chris Blanco</h1>
+                <h1>Hi, I'm Chris Blanco</h1>
                 <p>
-                    I am a Computer Engineering major at the National University of Costa Rica 
+                    I'm a Computer Engineering major at the National University of Costa Rica 
                     with experience in object oriented porgramming and languages such as C++ and Java.
                     Most recently I have been diving into web development, learning HTML, CSS and JavaScript.
-                    I am also in the process of getting the AWS Cloud Practitioner certificate.
+                    I'm also in the process of getting the AWS Cloud Practitioner certificate.
                 </p>
 
                 <button class="button-base-layout" id="contactMe-button">
@@ -58,6 +58,34 @@
                 <img src="resources/profile-pic1.jpg" width="400px">
             </div>
         </section>
+
         <script src="script.js"></script>
+
+        <script>
+            const sections = document.querySelectorAll('section[id]');
+            const navItems = document.querySelectorAll('.menu-bar-option a');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    const id = entry.target.getAttribute('id');
+                    const link = document.querySelector(`.menu-bar-option a[href="#${id}"]`);
+                
+                    if (!link) return;        
+                    const li = link.closest('.menu-bar-option');
+                    if (entry.isIntersecting) {
+                        li.classList.add('active');
+                    } else {
+                        li.classList.remove('active');
+                    }
+                });
+            }, {
+                threshold: 0.5,
+                rootMargin: "-20% 0px -20% 0px"
+            });
+            sections.forEach(section => {
+                if (section.id !== "menu-bar") observer.observe(section);
+            });
+        </script>        
+            
     </body>
 </html>

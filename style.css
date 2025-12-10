@@ -71,6 +71,24 @@ h1, h2, h3, h4, h5, h6, p {
     color: white;
 }
 
+/* Active section (keeps the option black even without hover) */
+.menu-bar-option.active {
+    background-color: black;
+}
+
+.menu-bar-option.active a {
+    color: white;
+}
+
+.menu-bar-option.active #white-icon {
+    display: inline-block;
+}
+
+.menu-bar-option.active #black-icon {
+    display: none;
+}
+
+
 /* -------------------- about-section customizations -------------------- */
 #about-section {
     display: flex;
