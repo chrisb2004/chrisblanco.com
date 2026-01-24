@@ -35,7 +35,7 @@ body {
 }
 
 #secondary-message-container {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     color: rgb(69, 69, 69);
     font-weight: 100;
 }
@@ -56,27 +56,23 @@ body {
 
 @media (min-width: 374px) and (orientation: portrait) {
     #message-bubble-container p {
-        font-size: 25px;
+        font-size: 30px;
     }
     
     #main-message-container h1 {
-        font-size: 45px;
-    }
-    
-    #secondary-message-container {
-        width: 75%;
+        font-size: 55px;
     }
 
     #secondary-message-container h3 {
-       font-size: 25px;
+       font-size: 30px;
     }
     
     #support-info-container h4 {
-        font-size: 20px;
+        font-size: 25px;
     }
     
     #support-info-container a {
-        font-size: 20px;
+        font-size: 25px;
     }
 }
   
