@@ -1,0 +1,10 @@
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+#menu-bar-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
