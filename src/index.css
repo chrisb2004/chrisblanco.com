@@ -2,8 +2,21 @@ html {
     box-sizing: border-box;
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
+    height: 100%;
 }
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
 body {
     margin: 0;
     padding: 0;
+    height: 100%;
+    background-color: rgb(15, 15, 15);
+    overflow: hidden;
 }
+
+#root {
+    height: 100%;
+  }

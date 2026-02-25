@@ -1,5 +1,6 @@
 import './MenuBar.css'
-import MenuBarItem from './Menu-bar-item/MenuBarItem'
+import MenuBarItem from './Menu-bar-link/MenuBarLink'
+import CVdownloadButton from './CV-Download-Button/CVdownloadButton'
 
 function MenuBar() {
     const items = [
@@ -10,6 +11,7 @@ function MenuBar() {
     ]
 
     return (
+        
         <nav id='menu-bar'>
             {items.map((item, index) => (
                 <MenuBarItem
@@ -19,7 +21,11 @@ function MenuBar() {
                     imgSrc={item.imgSrc}
                 />
             ))}
+
+            <CVdownloadButton/>     
         </nav>
+
+        
     )
 }
 
