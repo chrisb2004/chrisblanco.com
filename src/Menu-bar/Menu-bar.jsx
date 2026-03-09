@@ -5,6 +5,7 @@ import homeIcon from '../assets/home-section-icon.png'
 import aboutIcon from '../assets/about-section-icon.png'
 import porjectsIcon from '../assets/projects-section-icon.png'
 import contactIcon from '../assets/contact-section-icon.png'
+import downloadIcon from '../assets/download.png'
 
 function MenuBar({ onHomeClick, onShowMainBody }) {
     const items = [
@@ -28,7 +29,7 @@ function MenuBar({ onHomeClick, onShowMainBody }) {
             ))}
 
             <div id='downloadCVbutton-container'>
-                <img src='./src/assets/download.png'></img>
+                <img src={downloadIcon}></img>
                 <a id='downloadCVbutton' href='/Christopher-Blanco-CV.pdf' download>
                     Download CV
                 </a>
