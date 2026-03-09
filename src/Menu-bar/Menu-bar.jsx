@@ -1,12 +1,17 @@
 import './Menu-bar.css'
 import MenuBarLink from './Menu-bar-link/Menu-bar-link'
 
+import homeIcon from '../assets/home-section-icon.png'
+import aboutIcon from '../assets/about-section-icon.png'
+import porjectsIcon from '../assets/projects-section-icon.png'
+import contactIcon from '../assets/contact-section-icon.png'
+
 function MenuBar({ onHomeClick, onShowMainBody }) {
     const items = [
-        { title: "Home", onClick: onHomeClick, sectionLink:"", imgSrc: "./src/assets/home-section-icon.png" },
-        { title: "About", onClick: onShowMainBody, sectionLink:"#about-section", imgSrc: "./src/assets/about-section-icon.png" },
-        { title: "Projects", onClick: onShowMainBody, sectionLink:"#projects-section", imgSrc: "./src/assets/projects-section-icon.png" },
-        { title: "Contact", onClick: onShowMainBody, sectionLink:"#contact-section", imgSrc: "./src/assets/contact-section-icon.png" }
+        { title: "Home", onClick: onHomeClick, sectionLink:"", imgSrc: homeIcon },
+        { title: "About", onClick: onShowMainBody, sectionLink:"#about-section", imgSrc: aboutIcon },
+        { title: "Projects", onClick: onShowMainBody, sectionLink:"#projects-section", imgSrc: porjectsIcon },
+        { title: "Contact", onClick: onShowMainBody, sectionLink:"#contact-section", imgSrc: contactIcon }
     ]
 
     return (

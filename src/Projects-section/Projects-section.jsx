@@ -1,5 +1,8 @@
 import './Projects-section.css'
 
+import geneticChain from '../assets/genetic-chain.jpg'
+import premierLeagueLogo from '../assets/premier-league-logo.jpeg'
+
 function ProjectsSection() {
     return (
         <div id='projects-section-container'>
@@ -9,7 +12,7 @@ function ProjectsSection() {
             <ul id='project-list'>
                 <li className='project-list-item'>
                     <section className='project-image-container'>
-                        <img src='/src/assets/genetic-chain.jpg' alt='Genetic chain'></img>
+                        <img src={geneticChain} alt='Genetic chain'></img>
                     </section>
                    
                     <h3>Molecular Data Analysis System</h3>
@@ -22,7 +25,7 @@ function ProjectsSection() {
 
                 <li className='project-list-item'>
                     <section className='project-image-container'>
-                        <img src='/src/assets/premier-league-logo.jpeg' alt='Premier League logo'></img>
+                        <img src={premierLeagueLogo} alt='Premier League logo'></img>
                     </section>
 
                     <h3>Premier League Simulation Platform</h3>

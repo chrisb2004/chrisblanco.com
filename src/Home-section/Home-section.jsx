@@ -1,11 +1,13 @@
 import './Home-section.css'
 
+import profileImage from '../assets/Profile-image copy.jpg'
+
 function HomeSection() {
     return (
         <div id='home-section-container'>
             <section id='introduction-section-container'>
                 <section id='profile-image-container'>
-                    <img id='profile-image' src='./src/assets/Profile-image copy.jpg'></img>
+                    <img id='profile-image' src={profileImage}></img>
                 </section>
 
                 <section id='headlines-container'>

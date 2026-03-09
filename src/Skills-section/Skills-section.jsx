@@ -1,17 +1,29 @@
 import './Skills-section.css'
 
+import reactIcon from '../assets/react.svg'
+import jsIcon from '../assets/js.png'
+import htmlIcon from '../assets/html.png'
+import cssIcon from '../assets/css_icon.png'
+import javaIcon from '../assets/java.png'
+import cppICon from '../assets/c++_icon.png'
+import gitIcon from '../assets/git.png'
+import gitHubIcon from '../assets/github.png'
+import mySQLIcon from '../assets/mysql-database.png'
+import jsonIcon from '../assets/json.png'
+import oopIcon from '../assets/programming.png'
+
 const SKILL_ICONS = [
-    { src: '/src/assets/react.svg', alt: 'React' },
-    { src: '/src/assets/js.png', alt: 'JavaScript' },
-    { src: '/src/assets/html.png', alt: 'HTML' },
-    { src: '/src/assets/css.png', alt: 'HTML' },
-    { src: '/src/assets/java.png', alt: 'Java' },
-    { src: '/src/assets/c-.png', alt: 'C++' },
-    { src: '/src/assets/git.png', alt: 'Git' },
-    { src: '/src/assets/github.png', alt: 'GitHub' },
-    { src: '/src/assets/mysql-database.png', alt: 'MySQL' },
-    { src: '/src/assets/json.png', alt: 'JSON' },
-    { src: '/src/assets/programming.png', alt: 'OOP' },
+    { src: reactIcon, alt: 'React' },
+    { src: jsIcon, alt: 'JavaScript' },
+    { src: htmlIcon, alt: 'HTML' },
+    { src: cssIcon, alt: 'CSS' },
+    { src: javaIcon, alt: 'Java' },
+    { src: cppICon, alt: 'C++' },
+    { src: gitIcon, alt: 'Git' },
+    { src: gitHubIcon, alt: 'GitHub' },
+    { src: mySQLIcon, alt: 'MySQL' },
+    { src: jsonIcon, alt: 'JSON' },
+    { src: oopIcon, alt: 'OOP' },
 ]
 
 /* Repeat the list enough times so the full-width viewport shows A→B→C→A→B…; we animate by one copy so the loop is seamless */
