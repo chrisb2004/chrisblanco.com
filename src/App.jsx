@@ -42,7 +42,7 @@ function App() {
                 Based in <span>Costa Rica</span>, I'm a bilingual developer fluent in both 
                 <span> Spanish and English</span>. My experience spans from 
                 <span> low-level systems programming in C++</span> to building 
-                <span> full-stack web applications</span> with React and Node.js — 
+                <span> full-stack web applications</span> with Node.js and React. 
                 I enjoy working across the stack and diving deep into hard problems. 
                 Outside of class, I spend my time on personal projects like a 
                 <span> genomic data analysis engine</span> and a 
