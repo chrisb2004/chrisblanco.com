@@ -1,7 +1,7 @@
 import './Menu-bar.css'
 import MenuBarLink from './Menu-bar-link/Menu-bar-link'
 
-import homeIcon from '../assets/home-section-icon.png'
+import homeIcon from '../assets/home.png'
 import aboutIcon from '../assets/about-section-icon.png'
 import porjectsIcon from '../assets/projects-section-icon.png'
 import contactIcon from '../assets/contact-section-icon.png'
